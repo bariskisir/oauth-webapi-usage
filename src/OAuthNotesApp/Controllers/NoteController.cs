@@ -13,11 +13,11 @@ namespace OAuthNotesApp.Controllers
         [Route("api/Register")]
         [HttpPost]
         [AllowAnonymous]
-        public bool Register(User pNote)
+        public bool Register(User user)
         {
             using (var db = new NotesModel())
             {
-                var result = UserUtil.Register(pNote.Username, pNote.Password);
+                var result = UserUtil.Register(user.Username, user.Password);
                 return result;
             }
         }
