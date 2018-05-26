@@ -1,0 +1,138 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Notes",
+		"_postman_id": "ade6ced9-e33f-b227-6d7f-896cd298aaf2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"url": "http://localhost:50921/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "user1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetNotes",
+			"request": {
+				"url": "http://localhost:50921/api/GetNotes",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer vwyz3O03hGUHWVovCSFpDfY11bWs-oNDFPcJteTkKYStbvzeGmaTKZuTirKqdSQKOBJF5oDZWkYBv9rS2SxXy7puhD8SmOT9e-9bcMO7WexRaIjCKPzhWYOMHGFcgn7UpEExvezuSmIt5ymuYj2H1nczy8yDbmxGVWUjBgTc60GrugcTnlDc7lBCh2MWNbo1s63G9b5z5iImKOvGDSZRDdt9hmdSyQrUCL0jCCREiKk2z7jvPS6ekIknKVL0l3f1bwkS0WXX_uBfz94rCkyC-WVIpuG2hoqRaFT35yfTxv4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllNotes",
+			"request": {
+				"url": "http://localhost:50921/api/GetAllNotes",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer Cf5ucahKFazWQ6Rk7CBl1pYXlX1dB3H3JklsQezcSX2xgvd2S4za0abmOgI-vpbPIeA5reg8_X7u0yp-vyK_lNmVEg-B8DS3FD7GXoZM2lAIaARV5DHgzNw1y_M2g6m5NaGL4leALmqlF7I02vzI5ktNAUQ4EklqVehbyhIGu71N4LQJVKY0ZLtVMmuf-6y1khqL68lb-dKzUwBNZH5lSxW-Bdp8WqPII0n-fOi9PbzmiXv-bx5V0xVCtuSA1y4fODnT-l2mnYbflOG7kj5hbZK9zzdQxRUEE-WzbnbwbS0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AddNote",
+			"request": {
+				"url": "http://localhost:50921/api/AddNote",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eVNHJzt14AXRNGhFV-CxdSDDDpfXiKioBYMpHJsjL5GdeEClKf_t3KaivamyN_7FOOapgNnWi0ROfziNYZWJjrvIZ7j3qUnlsfcKauSXg9PL_LJ-LlZvOPAuQNNSNnnvrIy_h0zYHgShOaYDx6pn85wHDcsohMmF-MX8rEpMJjGveTHYSv465Yj2XqIt3badjLrXCf70c6-coNBTe2_X44i8aExGQOCnDVO_EGnHe32_2o6K5_SDRc3_wFZDKITqN7MQ_ahNfwztoGalMrQc4E-lqo2U8DHpZ2B2mjwef-hbSQGjCldMkWWOws4yBu93",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"test note\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"url": "http://localhost:50921/api/Register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer HYksyQggLWo0dZxi4IFIZ-zmCE2hyX4GJ_QIVqJURhbctzMcuFDeJNzmTaN3WNSLrIgZ_hGsWmitDUxE44ltMvJnawxOyN-fdevo0Fo59tTwOxtJcK5nZS1CGjnFLKROiULC2XhnOsbcaHwdjzvFodAN4g3x_DZ_ezSQ0ae6FeFsZLovPEYL6jOhkuNtNWvDhNiGZhJ_F3ejdt_WmF2IjOIUUti2KBqCVZP3ikj54WjZUv9AL6W-2FhW6suo_y2Nwum-eKBjVvAb4rDi_LmLt51nL0fJz8N5pvUHZmDJnb8",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Username\":\"user1\",\n\t\"Password\":\"pass1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
