@@ -12,7 +12,6 @@ namespace OAuthNotesApp.App_Start
     {
         public static void RegisterSwaggerConfig()
         {
-            var assembly = typeof(SwaggerConfig).Assembly;
             GlobalConfiguration.Configuration.EnableSwagger(x => x.SingleApiVersion("v1", "NotesAPI")).EnableSwaggerUi();
         }
     }
